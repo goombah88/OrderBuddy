@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "name": "Burgers",
+      "items": [
+        {
+          "id": "classic_burger",
+          "name": "Classic Burger",
+          "price": 10.99,
+          "description": "Juicy beef patty, fresh lettuce, ripe tomato, crisp onion, and tangy pickles.",
+          "options": {
+            "cheese": ["Cheddar", "Swiss", "Provolone", "No Cheese"],
+            "toppings": ["Bacon", "Mushrooms", "Jalapenos", "Extra Onions"],
+            "bread": ["Brioche Bun", "Sesame Seed Bun", "Lettuce Wrap"]
+          },
+          "default_doneness": ["Medium"],
+          "default_sides": ["Fries"],
+          "available_sides": ["Fries", "Onion Rings", "Side Salad", "Sweet Potato Fries"]
+        },
+        {
+          "id": "veggie_burger",
+          "name": "Veggie Burger",
+          "price": 9.99,
+          "description": "Hearty black bean patty, creamy avocado, and fresh sprouts.",
+          "options": {
+            "cheese": ["Cheddar", "Vegan Cheese", "No Cheese"],
+            "bread": ["Brioche Bun", "Whole Wheat Bun", "Gluten-Free Bun"]
+          },
+          "default_doneness": ["Medium"],
+          "default_sides": ["Side Salad"],
+          "available_sides": ["Fries", "Onion Rings", "Side Salad"]
+        }
+      ]
+    },
+    {
+    "name": "Sandwiches",
+    "items": [
+      {
+        "id": "chicken_sandwich",
+        "name": "Grilled Chicken Sandwich",
+        "price": 11.50,
+        "description": "Marinated grilled chicken breast, lettuce, tomato, and mayo.",
+        "options": {
+          "sauce": ["BBQ", "Ranch", "Honey Mustard"],
+          "cheese": ["Provolone", "Cheddar"]
+        },
+        "default_sides": ["Fries"],
+        "available_sides": ["Fries", "Coleslaw", "Side Salad"]
+      }
+    ]
+  },
+    {
+      "name": "Drinks",
+      "items": [
+        {"id": "coke", "name": "Coke", "price": 2.50, "description": "Classic Coca-Cola."},
+        {"id": "sprite", "name": "Sprite", "price": 2.50, "description": "Refreshing lemon-lime soda."},
+        {"id": "iced_tea", "name": "Iced Tea", "price": 2.00, "description": "Freshly brewed unsweetened iced tea."}
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        {"id": "chocolate_cake", "name": "Chocolate Cake", "price": 6.00, "description": "Rich, decadent chocolate cake."},
+        {"id": "apple_pie", "name": "Apple Pie", "price": 5.50, "description": "Warm apple pie with a flaky crust."}
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {"id": "fries", "name": "French Fries", "price": 6.00, "description": ""},
+        {"id": "tots", "name": "Tater Tots", "price": 5.50, "description": ""}
+        {"id": "side-salad", "name": "Side Salad", "price": 5.50, "description": ""}
+        {"id": "coleslaw", "name": "Coleslaw", "price": 5.50, "description": ""}
+      ]
+    }
+  ]
+}

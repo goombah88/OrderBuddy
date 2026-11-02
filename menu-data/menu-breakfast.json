@@ -1,0 +1,105 @@
+{
+  "categories": [
+    {
+      "name": "Omelets",
+      "items": [
+        {
+          "id": "classic_omelet",
+          "name": "Classic Omelet",
+          "price": 9.50,
+          "description": "Three eggs with your choice of cheese.",
+          "options": {
+            "cheese": ["Cheddar", "Swiss", "Provolone", "Feta"],
+            "fillings": ["Onions", "Peppers", "Mushrooms", "Spinach", "Tomatoes"]
+          },
+          "default_sides": ["Toast", "Home Fries"],
+          "available_sides": ["Toast", "Home Fries", "Grits", "Fruit Cup", "Bacon", "Sausage"]
+        },
+        {
+          "id": "western_omelet",
+          "name": "Western Omelet",
+          "price": 10.75,
+          "description": "Three eggs with ham, bell peppers, and onions.",
+          "options": {
+            "cheese": ["Cheddar", "Swiss"]
+          },
+          "default_sides": ["Toast"],
+          "available_sides": ["Toast", "Home Fries", "Grits"]
+        },
+        {
+          "id": "veggie_omelet",
+          "name": "Veggie Omelet",
+          "price": 9.99,
+          "description": "Three eggs with a medley of fresh seasonal vegetables.",
+          "options": {
+            "cheese": ["Provolone", "Feta", "No Cheese"]
+          },
+          "default_sides": ["Fruit Cup"],
+          "available_sides": ["Toast", "Home Fries", "Grits", "Fruit Cup"]
+        }
+      ]
+    },
+    {
+      "name": "Pancakes & Waffles",
+      "items": [
+        {
+          "id": "buttermilk_pancakes",
+          "name": "Buttermilk Pancakes",
+          "price": 8.00,
+          "description": "Stack of fluffy buttermilk pancakes.",
+          "options": {
+            "toppings": ["Blueberries", "Chocolate Chips", "Whipped Cream"]
+          },
+          "default_sides": [],
+          "available_sides": ["Bacon", "Sausage", "Maple Syrup"]
+        },
+        {
+          "id": "belgian_waffle",
+          "name": "Belgian Waffle",
+          "price": 8.50,
+          "description": "Crispy golden waffle.",
+          "options": {
+            "toppings": ["Strawberries", "Bananas", "Nutella"]
+          },
+          "default_sides": [],
+          "available_sides": ["Bacon", "Sausage"]
+        }
+      ]
+    },
+    {
+      "name": "Breakfast Combos",
+      "items": [
+        {
+          "id": "big_breakfast",
+          "name": "Big Breakfast",
+          "price": 12.00,
+          "description": "Two eggs any style, bacon or sausage, home fries, and toast.",
+          "options": {
+            "egg_style": ["Scrambled", "Fried", "Poached"],
+            "meat": ["Bacon", "Sausage"]
+          },
+          "default_sides": ["Home Fries", "Toast"],
+          "available_sides": []
+        }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {"id": "side_bacon", "name": "Bacon", "price": 3.00, "description": "Crispy bacon strips."},
+        {"id": "side_sausage", "name": "Sausage", "price": 3.00, "description": "Breakfast sausage links."},
+        {"id": "side_home_fries", "name": "Home Fries", "price": 2.50, "description": "Seasoned potato home fries."},
+        {"id": "side_fruit_cup", "name": "Fruit Cup", "price": 3.50, "description": "Fresh seasonal fruit."},
+        {"id": "side_toast", "name": "Toast", "price": 1.50, "description": "Choice of white or wheat toast."}
+      ]
+    },
+    {
+      "name": "Beverages",
+      "items": [
+        {"id": "coffee", "name": "Coffee", "price": 2.00, "description": "Freshly brewed coffee."},
+        {"id": "orange_juice", "name": "Orange Juice", "price": 3.00, "description": "Freshly squeezed orange juice."},
+        {"id": "milk", "name": "Milk", "price": 2.00, "description": "Choice of whole or skim milk."}
+      ]
+    }
+  ]
+}

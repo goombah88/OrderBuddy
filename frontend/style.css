@@ -1,0 +1,5 @@
+/* frontend/style.css */
+/* Add any custom styles here if needed, otherwise Tailwind handles most of it */
+.container {
+    min-height: 80vh; /* Adjust as needed */
+}

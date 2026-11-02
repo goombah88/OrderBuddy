@@ -1,0 +1,753 @@
+{
+  "categories": [
+    {
+      "name": "Appetizers",
+      "items": [
+        {
+          "id": "pierogie",
+          "name": "Pierogie",
+          "price": 10.95,
+          "description": "Six golden brown pierogies topped with grilled red onions, and Parmesan cheese."
+        },
+        {
+          "id": "fried_mozzarella",
+          "name": "Fried Mozzarella",
+          "price": 9.95,
+          "description": "Hand-cut and breaded mozzarella planks. Served with marinara sauce."
+        },
+        {
+          "id": "garlic_knots",
+          "name": "Garlic Knots",
+          "price": 9.95,
+          "description": "Oven-baked garlic knots, covered in garlic butter and parmesan cheese."
+        },
+        {
+          "id": "southwest_egg_roll",
+          "name": "Southwest Egg Roll",
+          "price": 11.95,
+          "description": "Ask for details."
+        },
+        {
+          "id": "chicken_tenders",
+          "name": "Chicken Tenders",
+          "price": 10.95
+        },
+        {
+          "id": "pretzel_and_cheese_sauce",
+          "name": "Pretzel & Cheese Sauce",
+          "price": 12.95,
+          "description": "Giant pretzel baked, salted, and served with a side of house-made cheese sauce."
+        },
+        {
+          "id": "beef_and_queso_dip",
+          "name": "Beef & Queso Dip",
+          "price": 9.95,
+          "description": "Our house-made cheese sauce is mixed with beef and jalapeños. Served with flour tortilla chips."
+        },
+        {
+          "id": "jalapeno_poppers",
+          "name": "Jalapeño Poppers",
+          "price": 9.95,
+          "description": "Eight deep-fried jalapeños filled with cream cheese. Served with sweet Thai chili sauce."
+        },
+        {
+          "id": "chili_pint",
+          "name": "Chili (Pint)",
+          "price": 5.89
+        },
+        {
+          "id": "soup_of_the_day_pint",
+          "name": "Soup of The Day (Pint)",
+          "price": 5.89
+        }
+      ]
+    },
+    {
+      "name": "Big 10 Tots",
+      "items": [
+        {
+          "id": "loaded_tots",
+          "name": "Loaded Tots",
+          "price": 9.95,
+          "description": "Smothered in cheese and bacon.",
+          "options": {
+            "sauce": ["Ranch", "Sour Cream"]
+          }
+        },
+        {
+          "id": "big_10_tots",
+          "name": "Big 10 Tots",
+          "price": 11.95,
+          "description": "Beef, lettuce, onions, pickle, Thousand Island, & sesame seeds."
+        },
+        {
+          "id": "philly_tots",
+          "name": "Philly Tots",
+          "price": 12.95,
+          "description": "Thinly sliced prime rib, onions, mushrooms, Swiss cheese, & homemade cheese sauce."
+        },
+        {
+          "id": "piggy_tots",
+          "name": "Piggy Tots",
+          "price": 10.95,
+          "description": "Pulled pork, cheese, and BBQ drizzle topped with fried onions."
+        },
+        {
+          "id": "greek_tots",
+          "name": "Greek Tots",
+          "price": 11.95,
+          "description": "Gyro meat, feta cheese, lettuce, tomatoes, onions, cucumber, pepperoncini & tzatziki sauce."
+        },
+        {
+          "id": "chicken_bacon_ranch_tots",
+          "name": "Chicken Bacon Ranch Tots",
+          "price": 10.95,
+          "description": "Fried chicken, bacon, cheese & ranch dressing."
+        },
+        {
+          "id": "cuban_tots",
+          "name": "Cuban Tots",
+          "price": 12.95,
+          "description": "Smoked Pork, Chopped Ham, pickles, Swiss cheese topped with mustard Aioli."
+        }
+      ]
+    },
+    {
+      "name": "Salads",
+      "items": [
+        {
+          "id": "garden_salad",
+          "name": "Garden Salad",
+          "price": 9.95,
+          "description": "Mixed greens, tomatoes, onions, cucumbers, mixed cheese, & hard boiled egg.",
+          "options": {
+            "dressing": ["Ranch", "Bleu Cheese", "Greek", "Italian", "Balsamic Vinaigrette", "Red Wine Vinaigrette", "Thousand Island", "Honey Mustard"],
+            "add_protein": ["Chicken", "Steak", "Shrimp", "Gyro Meat"]
+          }
+        },
+        {
+          "id": "greek_salad",
+          "name": "Greek Salad",
+          "price": 10.95,
+          "description": "Mixed greens, tomatoes, onions, cucumbers, feta cheese, beets, black olives, & pepperoncini.",
+          "options": {
+            "dressing": ["Ranch", "Bleu Cheese", "Greek", "Italian", "Balsamic Vinaigrette", "Red Wine Vinaigrette", "Thousand Island", "Honey Mustard"],
+            "add_protein": ["Chicken", "Steak", "Shrimp", "Gyro Meat"]
+          }
+        },
+        {
+          "id": "chef_salad",
+          "name": "Chef Salad",
+          "price": 10.95,
+          "description": "Mixed greens, ham, turkey, mixed cheese, tomatoes, onions, cucumbers, & hard boiled egg.",
+          "options": {
+            "dressing": ["Ranch", "Bleu Cheese", "Greek", "Italian", "Balsamic Vinaigrette", "Red Wine Vinaigrette", "Thousand Island", "Honey Mustard"],
+            "add_protein": ["Chicken", "Steak", "Shrimp", "Gyro Meat"]
+          }
+        },
+        {
+          "id": "california_salad",
+          "name": "California Salad",
+          "price": 10.95,
+          "description": "Mixed Greens, blueberries, strawberries, cucumbers, tomatoes, roasted walnuts & feta cheese.",
+          "options": {
+            "dressing": ["Ranch", "Bleu Cheese", "Greek", "Italian", "Balsamic Vinaigrette", "Red Wine Vinaigrette", "Thousand Island", "Honey Mustard"],
+            "add_protein": ["Chicken", "Steak", "Shrimp", "Gyro Meat"]
+          }
+        },
+        {
+          "id": "chicken_cobb_salad",
+          "name": "Chicken Cobb Salad",
+          "price": 11.95,
+          "description": "Mixed greens, crumbled bacon, cucumbers, tomatoes, red onions, hard-boiled egg, blue cheese crumbles, grilled chicken.",
+          "options": {
+            "dressing": ["Ranch", "Bleu Cheese", "Greek", "Italian", "Balsamic Vinaigrette", "Red Wine Vinaigrette", "Thousand Island", "Honey Mustard"],
+            "add_protein": ["Chicken", "Steak", "Shrimp", "Gyro Meat"]
+          }
+        },
+        {
+          "id": "caesar_salad",
+          "name": "Caesar Salad",
+          "price": 9.95,
+          "description": "Romaine hearts, croutons, and Parmesan cheese.",
+          "options": {
+            "dressing": ["Ranch", "Bleu Cheese", "Greek", "Italian", "Balsamic Vinaigrette", "Red Wine Vinaigrette", "Thousand Island", "Honey Mustard"],
+            "add_protein": ["Chicken", "Steak", "Shrimp", "Gyro Meat"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nachos",
+      "items": [
+        {
+          "id": "greek_nachos",
+          "name": "Greek Nachos",
+          "price": 14.95,
+          "description": "Hand-cut flour tortillas deep-fried and topped with gyro meat, lettuce, tomato, onions, cucumbers, feta cheese, pepperoncini, & tzatziki sauce.",
+          "options": {
+            "add_ons": ["Guacamole"]
+          }
+        },
+        {
+          "id": "pork_nachos",
+          "name": "Pork Nachos",
+          "price": 13.95,
+          "description": "Hand-cut flour tortillas deep-fried and topped with BBQ pork, cheese, lettuce, tomatoes, onions, & jalapeños.",
+          "options": {
+            "add_ons": ["Guacamole"]
+          }
+        },
+        {
+          "id": "classic_beef_or_chicken_nachos",
+          "name": "Classic Beef or Chicken Nachos",
+          "price": 12.95,
+          "description": "Hand-cut flour tortillas with cheese, lettuce, tomatoes, onions, & jalapeños.",
+          "options": {
+            "protein": ["Beef", "Chicken"],
+            "add_ons": ["Guacamole"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Quesadilla",
+      "items": [
+        {
+          "id": "quesadilla",
+          "name": "Quesadilla",
+          "price": 11.95,
+          "description": "Onions, peppers, blackened seasoning stuffed into a large flour tortilla.",
+          "options": {
+            "protein": ["Chicken", "Beef", "Steak"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wings",
+      "items": [
+        {
+          "id": "boneless_wings",
+          "name": "Boneless Wings",
+          "price": 11.95,
+          "description": "Deep-fried boneless wings.",
+          "options": {
+            "sauce": ["Hot", "Medium", "Mild", "Garlic Parmesan", "Teriyaki", "HTG", "BBQ", "Ultimate"],
+            "dressing": ["Bleu Cheese", "Ranch"]
+          },
+          "default_sides": ["Celery", "Carrot Sticks"]
+        },
+        {
+          "id": "classic_wings",
+          "name": "Classic Wings",
+          "price": 12.95,
+          "description": "Deep-fried classic wings.",
+          "options": {
+            "sauce": ["Hot", "Medium", "Mild", "Garlic Parmesan", "Teriyaki", "HTG", "BBQ", "Ultimate"],
+            "dressing": ["Bleu Cheese", "Ranch"]
+          },
+          "default_sides": ["Celery", "Carrot Sticks"]
+        },
+        {
+          "id": "buffalo_shrimp",
+          "name": "Buffalo Shrimp",
+          "price": 14.95,
+          "description": "Deep-fried shrimp.",
+          "options": {
+            "sauce": ["Hot", "Medium", "Mild", "Garlic Parmesan", "Teriyaki", "HTG", "BBQ", "Ultimate"],
+            "dressing": ["Bleu Cheese", "Ranch"]
+          },
+          "default_sides": ["Celery", "Carrot Sticks"]
+        }
+      ]
+    },
+    {
+      "name": "Build A Burger",
+      "items": [
+        {
+          "id": "big_10_single_burger",
+          "name": "Big 10 Single",
+          "price": 10.95,
+          "description": "Served with lettuce, tomato, onion, and a pickle.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "cheese": ["American", "Swiss", "Cheddar", "Bleu", "Pepper Jack", "Provolone", "Cheddar Jack", "Feta"],
+            "toppings": ["Jalapeños", "Caramelized Onion", "Mushrooms", "Onion Petals", "Guacamole", "Bacon", "Sliced Avocado"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries", "Home-made Cheese Sauce"]
+        },
+        {
+          "id": "big_10_double_burger",
+          "name": "Big 10 Double",
+          "price": 12.95,
+          "description": "Served with lettuce, tomato, onion, and a pickle.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "cheese": ["American", "Swiss", "Cheddar", "Bleu", "Pepper Jack", "Provolone", "Cheddar Jack", "Feta"],
+            "toppings": ["Jalapeños", "Caramelized Onion", "Mushrooms", "Onion Petals", "Guacamole", "Bacon", "Sliced Avocado"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries", "Home-made Cheese Sauce"]
+        },
+        {
+          "id": "big_10_triple_burger",
+          "name": "Big 10 Triple",
+          "price": 15.95,
+          "description": "Served with lettuce, tomato, onion, and a pickle.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "cheese": ["American", "Swiss", "Cheddar", "Bleu", "Pepper Jack", "Provolone", "Cheddar Jack", "Feta"],
+            "toppings": ["Jalapeños", "Caramelized Onion", "Mushrooms", "Onion Petals", "Guacamole", "Bacon", "Sliced Avocado"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries", "Home-made Cheese Sauce"]
+        }
+      ]
+    },
+    {
+      "name": "Double Stack Specialty Burgers",
+      "items": [
+        {
+          "id": "big_10_specialty_burger",
+          "name": "Big 10",
+          "price": 13.95,
+          "description": "Shredded lettuce, chopped onions & pickles mixed with Thousand island dressing.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "blackened_bacon_and_blue_burger",
+          "name": "Blackened Bacon & Blue",
+          "price": 14.95,
+          "description": "4 strips of bacon, blue cheese crumbles & blackened seasoning.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "triple_cheese_bacon_burger",
+          "name": "Triple Cheese Bacon Burger",
+          "price": 14.95,
+          "description": "4 strips of bacon, smothered in American, cheddar & swiss cheese.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "southwest_guac_burger",
+          "name": "Southwest Guac Burger",
+          "price": 15.95,
+          "description": "4 strips of bacon, guacamole, sliced jalapenos, smothered in pepper jack cheese & Boom Boom sauce.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "mushroom_onion_and_swiss_burger",
+          "name": "Mushroom Onion & Swiss",
+          "price": 13.95,
+          "description": "Loaded with sauteed mushrooms, onions, and Swiss cheese.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "double_bacon_and_bbq_burger",
+          "name": "Double Bacon & BBQ",
+          "price": 14.95,
+          "description": "4 strips of bacon, onion petals & BBQ Sauce.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries"],
+          "available_sides": ["French Fries", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        }
+      ]
+    },
+    {
+      "name": "Sliders",
+      "items": [
+        {
+          "id": "pulled_pork_sliders",
+          "name": "Pulled Pork Sliders",
+          "price": 10.95,
+          "description": "Slow-cooked BBQ pulled pork and fried onions."
+        },
+        {
+          "id": "bacon_cheeseburger_sliders",
+          "name": "Bacon Cheeseburger Sliders",
+          "price": 12.95,
+          "description": "Lettuce, tomato, onion, bacon & cheese."
+        },
+        {
+          "id": "blt_sliders",
+          "name": "BLT Sliders",
+          "price": 10.95,
+          "description": "Classic sandwich served on mini rolls topped with a mound of fresh bacon, lettuce, tomato, and mayo."
+        }
+      ]
+    },
+    {
+      "name": "Handhelds",
+      "items": [
+        {
+          "id": "philly_cheesesteak",
+          "name": "Philly Cheesesteak",
+          "price": 14.95,
+          "description": "Sliced Prime Rib, topped with grilled onions, and mushroom, & smothered with Swiss cheese and house cheese sauce served with mayo.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "french_dip",
+          "name": "French Dip",
+          "price": 14.95,
+          "description": "Shaved Prime Rib, melted provolone, served on a grilled hoagie roll with a garlic aioli.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "cuban",
+          "name": "Cuban",
+          "price": 12.95,
+          "description": "Smoked pork, grilled ham, Swiss cheese, chopped pickles, mayo & mustard, served on a pressed hoagie roll.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "triple_stack_club_house",
+          "name": "Triple Stack Club House",
+          "price": 13.95,
+          "description": "Turkey, ham, bacon, Swiss & American cheese stacked high with lettuce, tomato & mayo.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "buffalo_chicken",
+          "name": "Buffalo Chicken",
+          "price": 12.95,
+          "description": "Fried Chicken tossed in Buffalo sauce and served with lettuce and tomato.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "classic_blt",
+          "name": "Classic BLT",
+          "price": 12.95,
+          "description": "½ pound of bacon, lettuce, tomato, and mayo.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Guacamole", "Sliced Avocado", "Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "fish_sandwich",
+          "name": "Fish Sandwich",
+          "price": 13.95,
+          "description": "Served with lettuce and tomato on a Kaiser Roll with a side of Tartar Sauce.",
+          "options": {
+            "preparation": ["Grilled", "Blackened", "Fried"],
+            "fish_type": ["White Fish"],
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "gyro",
+          "name": "Gyro",
+          "price": 12.95,
+          "description": "Traditional gyro meat, tomatoes, onions, lettuce, and tzatziki sauce.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "chicken_caesar_wrap",
+          "name": "Chicken Caesar Wrap",
+          "price": 12.95,
+          "description": "Romaine hearts, Caesar dressing, tomatoes, & Parmesan cheese.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "grilled_ham_and_cheese_melt",
+          "name": "Grilled Ham & Cheese Melt",
+          "price": 11.95,
+          "description": "Thin-sliced Virginia Ham and American cheese.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "turkey_melt",
+          "name": "Turkey Melt",
+          "price": 11.95,
+          "description": "Grilled turkey, bacon, provolone cheese & ranch dressing.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "patty_melt",
+          "name": "Patty Melt",
+          "price": 12.95,
+          "description": "Burger patty, grilled onions, Swiss cheese & Thousand Island dressing.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "reuben_melt",
+          "name": "Reuben Melt",
+          "price": 12.95,
+          "description": "Corned Beef, sauerkraut, Swiss cheese & Thousand island dressing.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        },
+        {
+          "id": "tavern_steak_sandwich",
+          "name": "Tavern Steak Sandwich",
+          "price": 16.95,
+          "description": "Sliced Prime Ribeye with grilled onions and mushrooms and smothered in cheddar-jack cheese. Served on a butter-grilled hoagie roll with lettuce, tomato, pickle & mayo.",
+          "options": {
+            "bread": ["Flour Tortilla Wrap", "Kaiser Roll", "8'' Hoagie Roll", "White", "Wheat", "Rye", "Pita Bread"],
+            "add_ons": ["Home-made Cheese Sauce"]
+          },
+          "default_sides": ["French Fries", "Coleslaw"],
+          "available_sides": ["French Fries", "Coleslaw", "Waffle Fries", "Tater Tots", "Onion Rings", "Sweet Potato Fries"]
+        }
+      ]
+    },
+    {
+      "name": "Entrees",
+      "items": [
+        {
+          "id": "steak_and_shrimp",
+          "name": "Steak & Shrimp",
+          "price": 18.95,
+          "description": "10 oz Ribeye, 5 Jumbo Shrimp.",
+          "options": {
+            "side_choice": ["Fries", "Onion Petals", "Sweet Potato Fries", "Tots", "Waffle Fries", "Coleslaw", "Side Caesar", "Side Salad", "Broccoli"]
+          }
+        },
+        {
+          "id": "smothered_chicken",
+          "name": "Smothered Chicken",
+          "price": 16.95,
+          "description": "Grilled chicken breast topped with caramelized onions, mushrooms, bacon & honey mustard, smothered in cheddar-jack cheese.",
+          "options": {
+            "side_choice": ["Fries", "Onion Petals", "Sweet Potato Fries", "Tots", "Waffle Fries", "Coleslaw", "Side Caesar", "Side Salad", "Broccoli"]
+          }
+        },
+        {
+          "id": "pasta_rosa",
+          "name": "Pasta Rosa",
+          "price": 15.95,
+          "description": "Italian sausage, garlic, onions, peppers, and fresh basil over pasta with a red cream sauce."
+        },
+        {
+          "id": "rasta_pasta",
+          "name": "Rasta Pasta",
+          "price": 16.95,
+          "description": "Grilled Jerk Chicken, with sauteed onions, peppers, tomatoes, & artichokes, then tossed in spicy Sriracha cream sauce."
+        },
+        {
+          "id": "bbq_half_rack_ribs",
+          "name": "BBQ Half Rack Ribs",
+          "price": 15.95,
+          "description": "Served with Macaroni & Cheese, Cole Slaw & Cornbread.",
+          "default_sides": ["Macaroni & Cheese", "Cole Slaw", "Cornbread"]
+        },
+        {
+          "id": "chicken_broccoli_alfredo",
+          "name": "Chicken Broccoli Alfredo",
+          "price": 15.95,
+          "description": "Grilled Chicken & fresh broccoli in alfredo sauce."
+        }
+      ]
+    },
+    {
+      "name": "16\" Pizza",
+      "items": [
+        {
+          "id": "house_cheese_pizza",
+          "name": "House Cheese Pizza",
+          "price": 13.95,
+          "description": "Topped with mozzarella cheese. Gluten Free 12” available at the same prices.",
+          "options": {
+            "toppings": ["Pepperoni", "Italian Sausage", "Chicken Breast", "Bacon", "Ham", "Ricotta Cheese", "Mozzarella Cheese", "Mixed Peppers", "Banana Pepper", "Onions", "Mushrooms", "Jalapeños", "Tots", "Sliced Tomatoes", "Artichoke Hearts", "Fresh Baby Spinach", "Black Olives", "Fresh Garlic", "Fresh Basil", "Side of Sauce"]
+          }
+        },
+        {
+          "id": "supreme_pizza",
+          "name": "Supreme Pizza",
+          "price": 23.95,
+          "description": "Pepperoni, sausage, mushrooms, onions, mixed bell peppers, & black olives. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "meat_lovers_pizza",
+          "name": "Meat Lovers Pizza",
+          "price": 22.95,
+          "description": "Pepperoni, sausage, meatballs, ham, and bacon. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "veggie_delight_pizza",
+          "name": "Veggie Delight",
+          "price": 19.95,
+          "description": "Fresh garlic, spinach, mushrooms, mixed bell peppers, and onions. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "white_pizza",
+          "name": "White Pizza",
+          "price": 17.95,
+          "description": "Olive oil, fresh garlic, ricotta & mozzarella cheese. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "chicken_bacon_ranch_pizza",
+          "name": "Chicken Bacon Ranch Pizza",
+          "price": 21.95,
+          "description": "Ranch sauce, grilled chicken, and bacon. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "smokehouse_pizza",
+          "name": "Smokehouse Pizza",
+          "price": 23.95,
+          "description": "BBQ sauce base, topped with your choice of BBQ pulled pork, bacon, cheddar/jack & mozzarella cheese, then topped with tater tots. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "greek_pizza",
+          "name": "Greek Pizza",
+          "price": 23.95,
+          "description": "Gyro meat, lettuce, tomatoes, onions, cucumbers, feta cheese, and tzatziki. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "margarita_pizza",
+          "name": "Margarita Pizza",
+          "price": 20.95,
+          "description": "Sliced tomatoes, garlic, olive oil, & basil. Topped with balsamic glaze drizzle. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "mediterranean_pizza",
+          "name": "Mediterranean Pizza",
+          "price": 19.95,
+          "description": "Olive oil, fresh garlic, spinach, black olives, tomatoes, and feta cheese. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "philly_pizza",
+          "name": "Philly Pizza",
+          "price": 22.95,
+          "description": "Alfredo base, shaved prime rib, onions, mushrooms, and mozzarella cheese. Gluten Free 12” available at the same prices."
+        },
+        {
+          "id": "meatball_fresh_mozzarella_and_basil_pizza",
+          "name": "Meatball, Fresh Mozzarella & Basil",
+          "price": 19.95,
+          "description": "Classic red sauce, meatballs, fresh mozzarella & fresh basil. Gluten Free 12” available at the same prices."
+        }
+      ]
+    },
+    {
+      "name": "Calzones And Strombolis",
+      "items": [
+        {
+          "id": "large_cheese_calzone",
+          "name": "Large Cheese Calzone",
+          "price": 11.95,
+          "description": "With mozzarella and ricotta. Available after Noon. Please allow 15-20 minutes to prepare.",
+          "options": {
+            "toppings": ["Pepperoni", "Italian Sausage", "Chicken Breast", "Bacon", "Ham", "Ricotta Cheese", "Mozzarella Cheese", "Mixed Peppers", "Banana Pepper", "Onions", "Mushrooms", "Jalapeños", "Tots", "Sliced Tomatoes", "Artichoke Hearts", "Fresh Baby Spinach", "Black Olives", "Fresh Garlic", "Fresh Basil", "Side of Sauce"]
+          }
+        },
+        {
+          "id": "meat_stromboli",
+          "name": "Meat Stromboli",
+          "price": 15.95,
+          "description": "Pepperoni, sausage, ham, and mozzarella. Served with a side of marinara sauce. Available after Noon. Please allow 15-20 minutes to prepare."
+        },
+        {
+          "id": "veggie_stromboli",
+          "name": "Veggie Stromboli",
+          "price": 15.95,
+          "description": "Mushrooms, mixed bell peppers, spinach, onions, garlic, and mozzarella. Served with a side of marinara sauce. Available after Noon. Please allow 15-20 minutes to prepare."
+        }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {"id": "fries", "name": "Fries", "price": 4.00},
+        {"id": "onion_petals", "name": "Onion Petals", "price": 5.00},
+        {"id": "sweet_potato_fries", "name": "Sweet Potato Fries", "price": 5.00},
+        {"id": "tots", "name": "Tots", "price": 4.00},
+        {"id": "waffle_fries", "name": "Waffle Fries", "price": 5.00},
+        {"id": "coleslaw", "name": "Coleslaw", "price": 3.00},
+        {"id": "side_caesar", "name": "Side Caesar", "price": 4.00},
+        {"id": "side_salad", "name": "Side Salad", "price": 4.00},
+        {"id": "broccoli", "name": "Broccoli", "price": 4.00}
+      ]
+    }
+  ]
+}

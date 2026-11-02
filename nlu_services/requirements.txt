@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+spacy
+# If using transformers for NLU, add them here:
+# transformers
+# torch
+# datasets
