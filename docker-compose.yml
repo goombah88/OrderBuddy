@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  asr_service:
+    build:
+      context: .
+      dockerfile: asr_service/Dockerfile
+    ports:
+      - "8002:8000" # Expose ASR service on host port 8002
+    environment:
+      - HF_HOME=/app/hf_cache # Hugging Face cache for models
+    volumes:
+      # Persist downloaded Whisper models to avoid re-downloading on rebuilds
+      - ./asr_service/models:/app/hf_cache
+    # Uncomment and configure for GPU support if you have an NVIDIA GPU
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+    restart: unless-stopped
+
+  nlu_service:
+    build:
+      context: .
+      dockerfile: nlu_service/Dockerfile
+    ports:
+      - "8003:8000" # Expose NLU service on host port 8003
+    volumes:
+      # Mount the trained NLU model from the host
+      - ./backend/trained_nlu_model:/app/trained_nlu_model:ro
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000" # Main backend API on host port 8000
+    volumes:
+      # Mount menu data and SQLite DB persistence
+      - ./menu_data:/app/menu_data:ro
+      - ./data:/app/data # For SQLite DB persistence (create this folder on host)
+      - ./backend/trained_nlu_model:/app/trained_nlu_model:ro # Mount trained NLU model
+    environment:
+      # Internal Docker network names for service communication
+      - ASR_SERVICE_URL=http://asr_service:8000
+      - NLU_SERVICE_URL=http://nlu_service:8000
+    depends_on:
+      - asr_service
+      - nlu_service
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8001:80" # Frontend web server on host port 8001
+    depends_on:
+      - backend # Frontend depends on backend for menu data etc.
+    restart: unless-stopped

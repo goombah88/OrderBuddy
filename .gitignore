@@ -1,0 +1,25 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local data and generated model files
+data/
+*.db
+*.sqlite
+*.sqlite3
+asr_service/models/
+**/trained_nlu_model/
+
+# Downloaded site assets and build/runtime artifacts
+menu-data/*_files/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db

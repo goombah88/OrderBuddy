@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+python-multipart
+httpx
+# No spacy or transformers here, as they are separate services or handled by NLU service

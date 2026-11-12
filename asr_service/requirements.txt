@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+transformers
+torch # For CPU: torch==<version>+cpu -f https://download.pytorch.org/whl/torch_stable.html
+soundfile
+# pydub # Uncomment if you need robust audio format conversion
